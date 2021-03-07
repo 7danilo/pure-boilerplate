@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+	<!-- Navbar --> 
+	<div class="navbar" id="navbar_id">
+		<a href="https://www.example.com" class="bold">Website Name</a>
+		<a href="https://www.example.com">Browse</a>
+		<a href="https://www.example.com"  class="right_side">Login</a>
+	</div>
+
+	<br>
+	<h2>This is an <mark>early work in progress</mark>, don't use it unless you know what you're doing.</h2>
+
+	<!-- Cards --> 
+	<div class="card">
+		<div class="divide into1">
+			<div>
+				<h1>Simple Css Boilerplate (Preview)</h1>		
+			</div>
+		</div>
+		<div class="divide into2">
+			<div>
+				<h2>Pure CSS</h2>
+				No Javascript needed, no dependencies. Include the CSS into your project and you're ready to go!
+			</div>
+			<div>
+				<h2>Responsive Design</h2>
+				Made for mobile and desktop!<br>
+				Resize your browser window and watch how the content adapts to fit the region.
+			</div>
+			<div>
+				<h2>Modular</h2>
+				Modules are kept separated and work both individually and together. This makes for easier modifications of the code.
+			</div>
+			<div>
+				<h2>Make your own!</h2>
+				Generative UI design, change CSS variables to customize or use the sliders below for a preview.
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="divide into2">
+			<div>
+				<h2>layout.css</h2>
+				<h3>Gap</h3>
+				<input type="range" value="100" min="0" max="250" oninput="document.documentElement.style.setProperty('--gap', this.value/100);">
+			</div>
+			<div>
+				<h2>theme.css</h2>
+				<h3>Accent Hue</h3>
+				<input type="range" value="210" min="0" max="360" oninput="document.documentElement.style.setProperty('--accent-h', this.value);">
+				<h3>Color Temperature</h3>
+				<input type="range" value="6" min="0" max="40" oninput="document.documentElement.style.setProperty('--ui-s', this.value+'%');">
+				<h3>Flat / 3D</h3>
+				<input type="range" value="10" min="0" max="30" oninput="document.documentElement.style.setProperty('--cc-shadow', 'rgba(0,0,0,'+this.value/100+')' );">
+			</div>
+		</div>
+		<div class="divide into2">
+			<div>
+
+				<h2>Title 1</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper. Etiam varius turpis eget orci interdum dignissim at vel est. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus. Cras tempor tortor at suscipit rhoncus. Aenean ultricies iaculis nisi at venenatis. Nullam blandit euismod arcu vitae ullamcorper. Mauris quis imperdiet magna, vel dapibus orci. Sed consectetur est et accumsan pulvinar. Fusce a mi fringilla nisl tincidunt rutrum. Sed sagittis ipsum metus, quis imperdiet leo posuere a.
+				<br><br>
+				<h3>Input</h3>
+				<input placeholder="input example">
+
+			</div>
+			<div>
+				<h2>Title 2</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper. Etiam varius turpis eget orci interdum dignissim at vel est. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus.
+				<br><br>
+				<button>Button</button><button class="secondary">Secondary</button>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="divide into3">
+			<div>
+				<h2>Column Title A</h2>
+				<img src="img/flower.png">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</div>
+			<div>
+				<h2>Column Title B</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper. Etiam varius turpis eget orci interdum dignissim at vel est. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus.
+				<br><br>
+				<input placeholder="input example">
+				<button class="secondary">Secondary</button>
+			</div>
+			<div>
+				<h2>Column Title C</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper. Etiam varius turpis eget orci interdum dignissim at vel est. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus.
+			</div>
+			<div>
+				<h2>Column Title D</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper. Etiam varius turpis eget orci interdum dignissim at vel est. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus.
+				<br><br>
+				<button>Button</button>
+			</div>
+			<div>
+				<h2>Column Title E</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper. Etiam varius turpis eget orci interdum dignissim at vel est. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus.
+
+			</div>
+			<div>
+				<h2>Column Title F</h2>
+				<img src="img/flower.png">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor non elit suscipit pharetra in id orci. Integer et erat sed purus sagittis ullamcorper. Etiam varius turpis eget orci interdum dignissim at vel est. Morbi ligula urna, elementum id lorem vel, dapibus imperdiet tellus.
+
+			</div>		
+		</div>
+		<div class="divide into4">
+			<div>
+				<h2>1/4</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+			<div>
+				<h2>1/4</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+			<div>
+				<h2>1/4</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+			<div>
+				<h2>1/4</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+		</div>	
+		<div class="divide into5">
+			<div>
+				<h2>1/5</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+			<div>
+				<h2>1/5</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+			<div>
+				<h2>1/5</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+			<div>
+				<h2>1/5</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>
+			<div>
+				<h2>1/5</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<br><br>
+			</div>			
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="divide into1">
+			<h2>Table</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Surname</th>
+						<th>Number</th>
+						<th>Shape</th>
+						<th>Color</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Alexia</td>
+						<td>Green</td>
+						<td>4</td>
+						<td>Hexagon</td>
+						<td>Cyan</td>
+					</tr>
+					<tr>
+						<td>John</td>
+						<td>Carrot</td>
+						<td>1</td>
+						<td>Square</td>
+						<td>Green</td>
+					</tr>
+					<tr>
+						<td>Jimmy</td>
+						<td>Turner</td>
+						<td>2</td>
+						<td>Triangle</td>
+						<td>Blue</td>
+					</tr>
+					<tr>
+						<td>Sophie</td>
+						<td>Smith</td>
+						<td>3</td>
+						<td>Ellipse</td>
+						<td>Red</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>

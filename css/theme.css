@@ -1,0 +1,160 @@
+html {
+  /*Change this value from 0 to 360 to choose your theme colour*/
+  --accent-h: 210;
+
+  --cc-button:hsl(var(--accent-h),40%,55%);
+  --cc-button-hover: hsl(var(--accent-h),40%,42%);
+  --cc-navbar: hsl(var(--accent-h),23%,27%);
+  --cc-focus: hsl(var(--accent-h),56%,33%);
+  --ui-h:36;
+  --ui-s:6%;
+  --cc-ui:hsl(var(--ui-h),var(--ui-s),92%);
+  --cc-ui-hover:hsl(var(--ui-h),var(--ui-s),86%);
+  --cc-navbar-hover:hsl(var(--ui-h),var(--ui-s),92%,40%);
+  --cc-textfield:hsl(var(--ui-h),23%,97%);
+  --cc-textfield-alt:hsl(var(--ui-h),12%,95%);
+  --cc-navbar-text:#fffffff0;
+  --cc-navbar-text-selected:#ffffff;
+  --cc-unfocus: #ccc;
+  --cc-table-head: #ccc;
+  --cc-table-head-text: #000000;
+  --cc-shadow: rgba(0,0,0,0.1);
+  --cc-text: black;
+}
+body {font-family: sans-serif; background-color: var(--cc-ui-hover); color:var(--cc-text);} 
+.card {
+  background-color: var(--cc-ui);
+  box-shadow: 0 4px 20px 0 var(--cc-shadow);
+}
+@media (min-width: 600px) {
+  .card {
+    border-radius: 5px;
+  }
+}
+input, select, textarea {
+  background-color: var(--cc-textfield);
+  border-radius: 5px;
+  border: 2px solid var(--cc-unfocus);
+  outline: none;
+  -moz-box-shadow:    inset 0 0 4px var(--cc-shadow);
+  -webkit-box-shadow: inset 0 0 4px var(--cc-shadow);
+  box-shadow:         inset 0 0 4px var(--cc-shadow);
+}
+input:read-only, textarea:read-only {
+  cursor:default;
+  background-color:transparent;
+  border: 0;
+
+  border: 0px transparent;
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  box-shadow:         none;
+}
+input:focus, select:focus, textarea:focus{
+  border: 2px solid var(--cc-focus);
+}
+input:read-only:focus, textarea:read-only:focus {
+  border: 0px transparent;
+  background-color:var(--cc-ui-hover);
+}
+img {
+    border-radius: 5px;
+  }
+tr:nth-child(even) {background-color: var(--cc-textfield-alt);}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--cc-button);
+  color: #ffffff;
+  border-radius:5px;
+  border: 2px solid var(--cc-unfocus);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+button.secondary{
+  background: var(--cc-ui);
+  color: #000;
+}
+button:hover{
+  background: var(--cc-button-hover);
+}
+button.secondary:hover{
+  background: var(--cc-ui-hover);
+}
+button:focus {
+  border: 2px solid var(--cc-focus); 
+  outline: none;   
+}
+button:active {
+    transform: scale(0.98);
+}
+input[type=range] {
+  -webkit-appearance: none;
+  border-radius: 15px; 
+  background: var(--cc-unfocus);
+  outline: none;
+  outline: none;
+  -moz-box-shadow:    inset 0 0 4px var(--cc-shadow);
+  -webkit-box-shadow: inset 0 0 4px var(--cc-shadow);
+  box-shadow:         inset 0 0 4px var(--cc-shadow);
+}
+input[type=range]:focus {
+  background: var(--cc-unfocus);
+}
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb  {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--cc-button);
+  border-radius:20px;
+  border: 2px solid transparent; 
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+input[type=range]:hover::-webkit-slider-thumb, input[type=range]:hover::-moz-range-thumb{
+  background: var(--cc-button-hover);
+}
+input[type=range]:focus::-webkit-slider-thumb, input[type=range]:focus:focus::-moz-range-thumb{
+  border: 2px solid var(--cc-focus); 
+  outline: none;
+}
+input[type=range]:active::-webkit-slider-thumb, input[type=range]:active::-moz-range-thumb{
+    transform: scale(1.2);
+}
+tr:nth-child(odd) {background-color: var(--cc-textfield);}
+th {
+  background-color: var(--cc-table-head);
+  color:var(--cc-table-head-text);
+  border-bottom: 1px solid #aaa;
+}
+th:first-child{
+  border-radius: 2px 0 0 2px;
+}
+th:last-child{
+  border-radius: 0 2px 2px 0;
+}
+.navbar {
+  background-color: var(--cc-navbar);
+  box-shadow: 0 4px 20px 0 var(--cc-shadow);
+}
+.navbar a {
+  cursor: pointer;
+  color: var(--cc-navbar-text);
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+.navbar a:hover {
+  background-color: var(--cc-navbar-hover);
+}
+.navbar a.bold {
+  font-weight: 600;
+  background-color: var(--cc-button-hover);
+  color: var(--cc-navbar-text-selected);
+}
+.navbar a:focus{
+  outline: none;
+  border: 2px solid var(--cc-button-hover);
+}
